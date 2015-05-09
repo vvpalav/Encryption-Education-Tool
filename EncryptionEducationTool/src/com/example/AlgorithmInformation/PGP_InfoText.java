@@ -1,0 +1,41 @@
+package com.example.AlgorithmInformation;
+
+public interface PGP_InfoText {
+	static String source = "http://tools.ietf.org/html/rfc4880";
+	
+	static String file = "<!DOCTYPE html> "
+			+ "<html> "
+			+ "<body> "
+			+ "<p><font size=\"4\" face=\"Arial\">"
+			+ "Pretty Good Privacy (PGP) is a data encryption and decryption computer "
+			+ "program that provides cryptographic privacy and authentication for data "
+			+ "communication. PGP is often used for signing, encrypting, and decrypting "
+			+ "texts, e-mails, files, directories, and whole disk partitions and to increase "
+			+ "the security of e-mail communications. It was created by Phil Zimmermann in "
+			+ "1991 while working at PKWARE, Inc. PGP and similar software follow the OpenPGP "
+			+ "standard (RFC 4880) for encrypting and decrypting data."
+			+ "</font></p> "
+			+ "<p><font size=\"4\" face=\"Arial\">"
+			+ "PGP encryption uses a serial combination of hashing, data compression, "
+			+ "symmetric-key cryptography, and finally public-key cryptography; each "
+			+ "step uses one of several supported algorithms. Each public key is bound "
+			+ "to a user name and/or an e-mail address. The first version of this system "
+			+ "was generally known as a web of trust to contrast with the X.509 system, "
+			+ "which uses a hierarchical approach based on certificate authority and which "
+			+ "was added to PGP implementations later. Current versions of PGP encryption "
+			+ "include both options through an automated key management server."
+			+ "</font></p><br>"
+			+ "<h2>Algorithm Steps</h2>"
+			+ "<font size=\"4\" face=\"Arial\">"
+			+ "<ul><li>The sender creates a message.</li>"
+			+ "<li>The sending OpenPGP generates a random number to be used as a session key "
+			+ "for this message only.</li>"
+			+ "<li>The session key is encrypted using each recipient's public key. These "
+			+ "\"encrypted session keys\" start the message.</li>"
+			+ "<li>The sending OpenPGP encrypts the message using the session key, which "
+			+ "forms the remainder of the message.  Note that the message is also usually compressed.</li>"
+			+ "<li>The receiving OpenPGP decrypts the session key using the recipient's private key.</li>"
+			+ "<li>The receiving OpenPGP decrypts the message using the session key. If the message "
+			+ "was compressed, it will be decompressed.</li></ul></font>"
+			+ "</body> </html>";
+}
