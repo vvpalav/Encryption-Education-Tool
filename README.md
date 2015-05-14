@@ -20,7 +20,7 @@ RC4 is an symmetric key encryption algorithm. It uses user supplied Private Key 
 
 ###  Pretty Good Policy (PGP)
 
-PGP (RFC 4880) is a hybrid cryptosystem. It uses combination of private and public keys for encryption and decryption. It encrypts the message using public key of recever. Receiver decrypts the message using his private key. For detail information: http://www.pgpi.org/doc/pgpintro/
+PGP (RFC 4880) is a hybrid cryptosystem. It uses combination of private and public keys for encryption and decryption. It encrypts the message using public key of receiver. Receiver decrypts the message using his private key. For detail information: http://www.pgpi.org/doc/pgpintro/
 
 ####  Requirements for PGP
 
